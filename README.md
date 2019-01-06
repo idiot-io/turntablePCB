@@ -1,5 +1,3 @@
 # turntablePCB
 a rotary encoder on a pcb
-
-![](https://i.imgur.com/YSVze78.png) ![](https://i.imgur.com/2TCTPNL.png)
-
+![](https://i.imgur.com/DLZmRxc.png) ![](https://i.imgur.com/v0g3lgi.png)

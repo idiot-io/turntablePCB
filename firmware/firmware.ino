@@ -5,7 +5,7 @@
 #define EMITTER_PIN   2     // emitter is controlled by digital pin 2
 
 QTRSensorsRC qtrrc((unsigned char[]) {
-  3, 4, 5, 6, 7, 8, 9, 10
+  2, 3, 4, 5, 6, 7, 8, 9
 },
 NUM_SENSORS, TIMEOUT, EMITTER_PIN);
 unsigned int sensorValues[NUM_SENSORS];

@@ -5,6 +5,7 @@
 
     source https://github.com/KiCad/kicad-source-mirror/blob/master/demos/python_scripts_examples/plot_board.py
     additons via https://github.com/beagleboard/pocketbeagle/blob/master/kicad-scripts/kicad-fab.py
+    get this version at https://github.com/idiot-io/candy/tree/master/hardware
 '''
 
 import sys, os, subprocess

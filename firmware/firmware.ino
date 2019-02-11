@@ -29,30 +29,30 @@ void loop()
 {
   // read raw sensor values
   qtrrc.read(sensorValues);
-  int noOut = 0;
+
   for (char i = 0; i < NUM_SENSORS; i++)
   {
-    int bity = 0;
     if (sensorValues[i] > 100) {
-      Serial.print("1");
       sensorValues[i] = 1;
-
     } else {
-      Serial.print("0");
       sensorValues[i] = 0;
     }
-    noOut=atoi(char(sensorValues));
-    //noOut = noOut | (char(sensorValues[i]) - '0') << (7 - i);
   }
 
+  for (int ii = 0; ii < 8; ii++) {
+    //Serial.print(sensorValues[ii]);
+    bin[ii] = char(sensorValues[ii]);
+    //Serial.print(bin[ii]);
+  }
 
-  /*
-    //of the interwebs !
-    int noOut = 0;
-    for (int ii = 0; ii < 8; ii++) {
-      noOut = noOut | (char(sensorValues[ii]) - '0') << (7 - ii);
-    }
-  */
+  //of the interwebs !
+  int noOut = 0;
+  for (int ii = 0; ii < 8; ii++) {
+    noOut = noOut | (bin[ii] - '0') << (7 - ii);
+  };
+  Serial.print(char(sensorValues));
+  Serial.print("=");
+  Serial.print(char(bin));
   Serial.print("=");
   Serial.print(noOut);
   Serial.println();

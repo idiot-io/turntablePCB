@@ -1,9 +1,7 @@
+// turntablePCB
+
+// based on QTRSrawValues example code
 #include <QTRSensors.h>
-
-// prints the sensor values to the serial
-// monitor as numbers from 0 (maximum reflectance) to 2500 (minimum reflectance).
-
-
 #define NUM_SENSORS   8     // number of sensors used
 #define TIMEOUT       2500  // waits for 2500 microseconds for sensor outputs to go low
 #define EMITTER_PIN   QTR_NO_EMITTER_PIN     // emitter is controlled by digital pin 2
@@ -29,33 +27,22 @@ void loop()
 {
   // read raw sensor values
   qtrrc.read(sensorValues);
-
+  int noOut = 0;
   for (char i = 0; i < NUM_SENSORS; i++)
   {
-    if (sensorValues[i] > 100) {
+    if (sensorValues[i] > 100)
       sensorValues[i] = 1;
-    } else {
+    else
       sensorValues[i] = 0;
-    }
   }
 
+  //magic line of the interwebs ! 
+  //convert binary '00001111' to int
   for (int ii = 0; ii < 8; ii++) {
-    //Serial.print(sensorValues[ii]);
-    bin[ii] = char(sensorValues[ii]);
-    //Serial.print(bin[ii]);
-  }
-
-  //of the interwebs !
-  int noOut = 0;
-  for (int ii = 0; ii < 8; ii++) {
-    noOut = noOut | (bin[ii] - '0') << (7 - ii);
+    noOut = noOut | ((sensorValues[ii] + '0') - '0') << (7 - ii);
   };
-  Serial.print(char(sensorValues));
-  Serial.print("=");
-  Serial.print(char(bin));
-  Serial.print("=");
-  Serial.print(noOut);
-  Serial.println();
+
+  Serial.print(noOut); Serial.println();
 
   delay(5);
 }

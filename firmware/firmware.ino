@@ -1,13 +1,15 @@
 // turntablePCB
 
 #include <QTRSensors.h>
+#include "table209.h"
 
 QTRSensors qtr;
 
 const uint8_t SensorCount = 8;
 uint16_t sensorValues[SensorCount];
+uint16_t bitValue[SensorCount];
 int prevOut;
-
+int counter;
 void setup()
 {
   pinMode(10, OUTPUT);
@@ -30,34 +32,48 @@ void loop()
   int noOut = 0;
   for (char i = 0; i < SensorCount; i++)
   {
-    if (sensorValues[i] > 500)
-      sensorValues[i] = 1;
+    if (sensorValues[i] > 1000)
+      bitValue[i] = 1;
     else
-      sensorValues[i] = 0;
+      bitValue[i] = 0;
   }
 
   //magic line of the interwebs !
   //convert binary '00001111' to int
   for (int ii = 0; ii < 8; ii++) {
-    noOut = noOut | ((sensorValues[ii] + '0') - '0') << (7 - ii);
+    noOut = noOut | ((bitValue[ii] + '0') - '0') << (7 - ii);
   };
 
   //generate the table
-  analogWrite(10, noOut);
-  if (noOut != prevOut) {
-    Serial.print(noOut);
-    Serial.print('\t');
 
+  //if (noOut != prevOut) {
+  Serial.print(noOut);
+  Serial.print('\t');
+
+  int wantedpos;
+  for (int i = 0; i < tableLength; i++) {
+    if (noOut == table209[i]) {
+      wantedpos = i;
+      break;
+    }
+  }
+
+  Serial.print(wantedpos);
+  analogWrite(10, wantedpos);
+  Serial.print('\t');
+  Serial.println();
+  /*
     for (uint8_t i = 0; i < SensorCount; i++)
     {
-      Serial.print(sensorValues[i]);
-      Serial.print('\t');
+    //Serial.print(sensorValues[i]);
+    Serial.print(bitValue[i]);
+
+    Serial.print('\t');
     }
 
     Serial.println();
-  }
-  prevOut = noOut;
-
+    //}
+  */
   delay(5);
 }
 

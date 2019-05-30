@@ -1,38 +1,36 @@
 // turntablePCB
 
-// based on QTRSrawValues example code
 #include <QTRSensors.h>
 
-#define NUM_SENSORS   8     // number of sensors used
-#define TIMEOUT       2500  // waits for 2500 microseconds for sensor outputs to go low
-#define EMITTER_PIN   QTR_NO_EMITTER_PIN     // emitter is controlled by digital pin 2
+QTRSensors qtr;
 
-// sensors 0 through 7 are connected to digital pins 2 through 9, respectively
-QTRSensorsRC qtrrc((unsigned char[]) {
-  2, 3, 4, 5, 6, 7, 8, 9
-},
-NUM_SENSORS, TIMEOUT, EMITTER_PIN);
-unsigned int sensorValues[NUM_SENSORS];
-
-#include "table.h"
+const uint8_t SensorCount = 8;
+uint16_t sensorValues[SensorCount];
 int prevOut;
 
 void setup()
 {
-  Serial.begin(115200);
-  delay(100);
+  pinMode(10, OUTPUT);
+  // configure the sensors
+  qtr.setTypeRC();
+  qtr.setSensorPins((const uint8_t[]) {
+    9, 8, 7, 6, 5, 4, 3, 2
+  }, SensorCount);
+  qtr.setEmitterPin(255);
 
+  Serial.begin(115200);
 }
 
 
 void loop()
 {
   // read raw sensor values
-  qtrrc.read(sensorValues);
+  qtr.read(sensorValues);
+
   int noOut = 0;
-  for (char i = 0; i < NUM_SENSORS; i++)
+  for (char i = 0; i < SensorCount; i++)
   {
-    if (sensorValues[i] > 100)
+    if (sensorValues[i] > 500)
       sensorValues[i] = 1;
     else
       sensorValues[i] = 0;
@@ -45,22 +43,21 @@ void loop()
   };
 
   //generate the table
-
+  analogWrite(10, noOut);
   if (noOut != prevOut) {
-    if (noOut == 0) {
-      Serial.println("start");
-      Serial.println("0");
-    } else {
-      Serial.println(noOut);
+    Serial.print(noOut);
+    Serial.print('\t');
+
+    for (uint8_t i = 0; i < SensorCount; i++)
+    {
+      Serial.print(sensorValues[i]);
+      Serial.print('\t');
     }
+
+    Serial.println();
   }
   prevOut = noOut;
-  /*
-    Serial.print(noOut);
-    Serial.print("\t");
-    Serial.print(grayTable[noOut]);
-    Serial.println();
-  */
+
   delay(5);
 }
 

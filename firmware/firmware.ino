@@ -10,29 +10,48 @@ uint16_t sensorValues[SensorCount];
 uint16_t bitValue[SensorCount];
 int prevOut;
 int counter;
+int channel;
+int noOut;
+
+int threshold = 1000;
+
 void setup()
 {
-  pinMode(10, OUTPUT);
+  Serial.begin(115200);
+
+  pinMode(12, OUTPUT);// fake ground
+  digitalWrite(12, LOW);//
+  pinMode(10, OUTPUT);//cv
+  pinMode(11, OUTPUT);//gate
+  pinMode(A1, INPUT);//channel select
+  
   // configure the sensors
   qtr.setTypeRC();
   qtr.setSensorPins((const uint8_t[]) {
     9, 8, 7, 6, 5, 4, 3, 2
   }, SensorCount);
-  qtr.setEmitterPin(255);
-
-  Serial.begin(115200);
+  qtr.setEmitterPin(255);//no emiiter control
 }
 
 
 void loop()
 {
-  // read raw sensor values
+  // read raw qtr values
   qtr.read(sensorValues);
+  int pot = analogRead(A1) ;
 
-  int noOut = 0;
+  //simple channle select, with zero as pass all
+  if (pot == 0) {
+    digitalWrite(11, 1);
+  } else {
+    channel = pot / 127;
+    digitalWrite(11, bitValue[channel]);
+  }
+
+  //threshold for bits
   for (char i = 0; i < SensorCount; i++)
   {
-    if (sensorValues[i] > 1000)
+    if (sensorValues[i] > threshold)
       bitValue[i] = 1;
     else
       bitValue[i] = 0;
@@ -45,11 +64,6 @@ void loop()
   };
 
   //generate the table
-
-  //if (noOut != prevOut) {
-  Serial.print(noOut);
-  Serial.print('\t');
-
   int wantedpos;
   for (int i = 0; i < tableLength; i++) {
     if (noOut == table209[i]) {
@@ -58,11 +72,19 @@ void loop()
     }
   }
 
-  Serial.print(wantedpos);
   analogWrite(10, wantedpos);
+
+
+  Serial.print(channel);
   Serial.print('\t');
+  Serial.print(noOut);
+  Serial.print('\t');
+  Serial.print(wantedpos);
   Serial.println();
+
+
   /*
+     //raw value table for QTR
     for (uint8_t i = 0; i < SensorCount; i++)
     {
     //Serial.print(sensorValues[i]);

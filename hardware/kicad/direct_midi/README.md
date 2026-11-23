@@ -29,6 +29,12 @@ KiCad board remain separate.
   slot and the lead toes resting on the underside rails; do not place them
   lens-out for standard reflow. The pin-1 mark identifies the anode pad.
   These ten footprints intentionally have no stencil paste apertures.
+- J1 sits at the edge because the plug enters from outside the board: the jack
+  body ends 0.46 mm inside the outline and only the footprint's courtyard band
+  crosses it, by 0.04 mm. The kicad-happy `PM-002` placement check reports that
+  as an error: its edge-mount exemption has no audio-jack entry, and the PCB
+  analyzer does not apply `.kicad-happy.json` suppressions (only the EMC and
+  thermal analyzers do). Read it as a waiver, not as a defect.
 - The curved routing is made of native KiCad tracks and circular arcs, not
   imported copper graphics. Ground uses the two GND pours and stitching vias
   instead of separate traces. The pours have thermal reliefs. This wired-only

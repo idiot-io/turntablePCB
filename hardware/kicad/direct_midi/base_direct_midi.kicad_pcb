@@ -641,6 +641,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "1092a240-3ce7-4bd9-b663-0256c8e49a5f")
 			(effects
 				(font
@@ -1159,6 +1160,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "ceebb651-3aff-45ec-9954-9ff9968b96fd")
 			(effects
 				(font
@@ -2357,6 +2359,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "286c518c-9d29-41ac-945f-254021c549b8")
 			(effects
 				(font
@@ -3156,8 +3159,9 @@
 			)
 		)
 		(property "Value" "QRE1113GR"
-			(at 0 -3.9 90)
+			(at -3.175767 -5.439434 180)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "59110123-fae1-4894-a826-4dfc92752a0f")
 			(effects
 				(font
@@ -3522,6 +3526,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "d8cc6b33-5f26-4211-9328-0da30203cd19")
 			(effects
 				(font
@@ -4348,6 +4353,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "af082b0a-f417-4c70-9ae0-8ab6a96f7ec3")
 			(effects
 				(font
@@ -4558,6 +4564,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "0dbfbbde-a1ea-4417-a296-538d034ac302")
 			(effects
 				(font
@@ -5230,6 +5237,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "1b6be350-bb38-4518-8fd8-0616d2730980")
 			(effects
 				(font
@@ -6826,6 +6834,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "cb202129-f84a-4eeb-957d-d5a2db4418bb")
 			(effects
 				(font
@@ -7190,6 +7199,7 @@
 		(property "Value" "QRE1113GR"
 			(at 0 -3.9 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "50e3fee2-7e03-4182-b969-90d961fcd996")
 			(effects
 				(font

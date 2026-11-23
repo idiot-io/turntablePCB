@@ -1953,7 +1953,7 @@
 	)
 	(text "3.5 mm TRS Type A | MIDI OUT"
 		(exclude_from_sim no)
-		(at 120.65 108 0)
+		(at 207.01 108 0)
 		(effects
 			(font
 				(size 2.1 2.1)
@@ -2292,20 +2292,12 @@
 		(uuid "4236fe2f-279a-54bd-b6d9-6ade9baa36d0")
 	)
 	(no_connect
-		(at 71.12 135.89)
-		(uuid "75ae169b-dde6-525c-829e-479f26e9f8c1")
-	)
-	(no_connect
 		(at 71.12 125.73)
 		(uuid "edc5e80e-fd48-57ef-927a-62958fed9615")
 	)
 	(no_connect
 		(at 71.12 156.21)
 		(uuid "f0c0a272-2ac9-5a83-8198-b5befe670342")
-	)
-	(no_connect
-		(at 71.12 133.35)
-		(uuid "f3115fff-b89d-5605-b5ef-35bd389c5eea")
 	)
 	(wire
 		(pts
@@ -7631,5 +7623,1028 @@
 		(path "/"
 			(page "1")
 		)
+	)
+
+	(junction
+		(at 120.65 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22d9fbf9-48f2-5265-a867-57da622425be")
+	)
+	(wire
+		(pts
+			(xy 116.84 113.03) (xy 116.84 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c94f1b3-bf2c-52ff-b222-cbdb54d6631f")
+	)
+	(wire
+		(pts
+			(xy 86.36 107.95) (xy 83.82 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04b5508e-af0b-5a4b-8294-0baaad73874d")
+	)
+	(wire
+		(pts
+			(xy 99.06 113.03) (xy 96.52 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a368a61b-9cae-5ca2-af8e-7c109caa924a")
+	)
+	(wire
+		(pts
+			(xy 114.30 107.95) (xy 120.65 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e9e4f26-b225-560f-82a2-b82ac9712ee2")
+	)
+	(wire
+		(pts
+			(xy 120.65 123.19) (xy 120.65 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "570d87d1-f40f-575b-b905-49074e6755be")
+	)
+	(wire
+		(pts
+			(xy 93.98 107.95) (xy 99.06 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "415d5179-99e0-559d-9ab3-e4a963dbecb3")
+	)
+	(wire
+		(pts
+			(xy 120.65 107.95) (xy 120.65 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4886f382-8c0e-5ddd-82e1-78bdce2d3b13")
+	)
+	(wire
+		(pts
+			(xy 114.30 113.03) (xy 116.84 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "362ffe94-e750-5346-b6d6-69686a2b206a")
+	)
+	(wire
+		(pts
+			(xy 130.81 107.95) (xy 133.35 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d1564d8-0d4a-5c21-8d49-d4716efd2ebe")
+	)
+	(wire
+		(pts
+			(xy 120.65 107.95) (xy 123.19 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4871d19-0b18-5331-922c-8624b1fbd4ee")
+	)
+	(wire
+		(pts
+			(xy 96.52 113.03) (xy 96.52 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264c548c-e12c-5d90-a45f-9a3da38ae915")
+	)
+	(label "GND"
+		(at 116.84 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "acd0cb4f-a37f-5e35-8ae2-d212a3c1a3e1")
+	)
+	(label "+3V3"
+		(at 120.65 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7e88fb1-0677-5a3a-b2f4-ef2b179a22e2")
+	)
+	(label "+3V3"
+		(at 83.82 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "081c9df6-d889-5e1f-b541-bc1aec1eb553")
+	)
+	(label "GND"
+		(at 96.52 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbe7fb08-6b54-5672-aba4-b57ba5af229c")
+	)
+	(label "QUAD_A"
+		(at 133.35 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fb2b8f1-1224-5824-a541-e3256421995d")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 127.00 107.95 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be681525-bfdc-5fc2-812b-2eac8cc96ea1")
+		(property "Reference" "R21"
+			(at 127.00 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470R"
+			(at 127.00 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 127.00 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127.00 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127.00 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61f1a9b5-87d0-50b4-b4b8-b83f0b51a595")
+		)
+		(pin "2"
+			(uuid "defce88b-3dd4-57d4-8eae-a74b827c9e34")
+		)
+		(instances
+			(project ""
+				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Proximity:QRE1113GR")
+		(at 106.68 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf7cdc41-7405-5f5c-bd7a-880718b8be8f")
+		(property "Reference" "U11"
+			(at 106.68 101.60 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "QRE1113GR"
+			(at 106.68 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Turntable:QRE1113GR_OpticalSlot"
+			(at 106.68 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF"
+			(at 106.68 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Miniature Reflective Optical Object Sensor, SMD-4"
+			(at 106.68 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d15da19f-21ba-50b6-9c30-879dea128b32")
+		)
+		(pin "2"
+			(uuid "d85db4c3-dfa8-5db6-bd54-b312b2811c9c")
+		)
+		(pin "3"
+			(uuid "302e6c2f-ed09-501a-bc35-2daaf8bf61a9")
+		)
+		(pin "4"
+			(uuid "548ee5d5-928b-5230-aee7-dc487bc99c02")
+		)
+		(instances
+			(project ""
+				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 120.65 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a23a35e-cd48-5671-a387-f9c393151757")
+		(property "Reference" "C10"
+			(at 125.73 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10nF"
+			(at 125.73 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 120.65 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 120.65 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4eb3929d-fe6d-5349-9099-bde970781af3")
+		)
+		(pin "2"
+			(uuid "cb844653-621b-5ebc-97c2-b1dc05f1424e")
+		)
+		(instances
+			(project ""
+				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.17 107.95 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e24b3f31-2e8c-576e-b957-40404d956f86")
+		(property "Reference" "R20"
+			(at 90.17 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 90.17 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 90.17 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 90.17 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d426b101-b116-50bf-8d19-4a2dcf3ed6c9")
+		)
+		(pin "2"
+			(uuid "e74c5d97-70ae-592b-a3f5-750941557fd6")
+		)
+		(instances
+			(project ""
+				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 71.12 135.89) (xy 58.42 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "583ccd09-92ee-52e6-8ca3-c6603670be97")
+	)
+	(label "QUAD_A"
+		(at 58.42 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7b5a45ea-d08b-5f03-96b6-38eceffc057f")
+	)
+	(junction
+		(at 186.69 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "beb3697d-17a0-5a66-b07d-b644814a689d")
+	)
+	(wire
+		(pts
+			(xy 182.88 113.03) (xy 182.88 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f75d96bb-1d30-561b-85a4-0d9927355930")
+	)
+	(wire
+		(pts
+			(xy 152.40 107.95) (xy 149.86 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6b8973-23ce-5e7c-b264-9eac40420243")
+	)
+	(wire
+		(pts
+			(xy 165.10 113.03) (xy 162.56 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b04a10-467f-5f45-ab37-9f9d82a5f8e0")
+	)
+	(wire
+		(pts
+			(xy 180.34 107.95) (xy 186.69 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c3a9b94-8599-5189-9d50-9ef08fe1e484")
+	)
+	(wire
+		(pts
+			(xy 186.69 123.19) (xy 186.69 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb5e63a9-1b9c-59d9-9adc-1afbebaa8dc8")
+	)
+	(wire
+		(pts
+			(xy 160.02 107.95) (xy 165.10 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a7dea67-17ca-5687-8dee-07445a60ca5f")
+	)
+	(wire
+		(pts
+			(xy 186.69 107.95) (xy 186.69 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faa5345f-8089-5e53-b330-835590f6356a")
+	)
+	(wire
+		(pts
+			(xy 180.34 113.03) (xy 182.88 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa071954-4a51-5de6-8ac5-aa3047bfd83e")
+	)
+	(wire
+		(pts
+			(xy 196.85 107.95) (xy 199.39 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68bb2ce-9b30-5817-8df9-4d67305e83a3")
+	)
+	(wire
+		(pts
+			(xy 186.69 107.95) (xy 189.23 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63d0ec6a-1960-5605-9332-c065341dfffd")
+	)
+	(wire
+		(pts
+			(xy 162.56 113.03) (xy 162.56 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c1de472-3c62-551f-9bca-6ee159f8df34")
+	)
+	(label "GND"
+		(at 182.88 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "df3d861b-f48f-5450-afa7-e7724c13f315")
+	)
+	(label "+3V3"
+		(at 186.69 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d75736ee-150f-5e65-821b-7c24be517369")
+	)
+	(label "+3V3"
+		(at 149.86 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c25411ca-eda2-5395-b805-1180e54e4fb2")
+	)
+	(label "GND"
+		(at 162.56 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "077b17bc-5dfe-52f8-a030-a85fad706b8d")
+	)
+	(label "QUAD_B"
+		(at 199.39 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5927d018-bdf5-5ed9-ad2a-59f21cac608f")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 193.04 107.95 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c1c0dbc7-f6c2-535f-9e1b-b996f4b72269")
+		(property "Reference" "R23"
+			(at 193.04 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470R"
+			(at 193.04 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 193.04 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 193.04 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4c753e3-5ec8-5484-9fa4-eacc9edcd0d1")
+		)
+		(pin "2"
+			(uuid "99f10686-d579-5bda-aa04-a5fbad384b9e")
+		)
+		(instances
+			(project ""
+				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Proximity:QRE1113GR")
+		(at 172.72 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eec12f38-9355-5b69-8d20-8366fa05267d")
+		(property "Reference" "U12"
+			(at 172.72 101.60 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "QRE1113GR"
+			(at 172.72 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Turntable:QRE1113GR_OpticalSlot"
+			(at 172.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF"
+			(at 172.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Miniature Reflective Optical Object Sensor, SMD-4"
+			(at 172.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5122b3c3-3f7c-5835-a2c3-94e193efffdd")
+		)
+		(pin "2"
+			(uuid "11d57bbc-cd75-5f3f-86e9-eb6fe7243387")
+		)
+		(pin "3"
+			(uuid "77537b91-ab3b-5f2d-82e6-8737ec5730dd")
+		)
+		(pin "4"
+			(uuid "8a861874-27df-5fac-9abc-0f2eccbddf7a")
+		)
+		(instances
+			(project ""
+				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 186.69 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6feb6b03-f8a1-5a34-a7d9-ccf2d35c7a62")
+		(property "Reference" "C11"
+			(at 191.77 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10nF"
+			(at 191.77 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 186.69 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 186.69 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "222f228b-4b49-58ef-b2fe-b1978912f90a")
+		)
+		(pin "2"
+			(uuid "70a120e2-45c8-56f9-926c-f025991a55f2")
+		)
+		(instances
+			(project ""
+				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 156.21 107.95 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0c29cc26-6eb2-542c-8dab-8cebc6e72431")
+		(property "Reference" "R22"
+			(at 156.21 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 156.21 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 156.21 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8876a6e6-f215-50da-8c0c-3c3be882b6e4")
+		)
+		(pin "2"
+			(uuid "e3ae6061-96ca-5abc-beaa-3c4f5a3f914a")
+		)
+		(instances
+			(project ""
+				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 71.12 133.35) (xy 58.42 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "742885d1-877e-55af-b2f3-ebf2d74cf13d")
+	)
+	(label "QUAD_B"
+		(at 58.42 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c12432c6-d2b6-57aa-be20-e3630b154c7d")
+	)
+	(text "Quadrature A/B | direct RC readout"
+		(exclude_from_sim no)
+		(at 83.82 96.52 0)
+		(effects (font (size 2.1 2.1) (bold yes)) (justify left))
+		(uuid "363c7729-8508-53a4-a95d-11dc77a775a0")
 	)
 )

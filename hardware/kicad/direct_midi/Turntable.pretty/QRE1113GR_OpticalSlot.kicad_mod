@@ -3,12 +3,12 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "QRE1113GR for legacy turntable optical slot, with extended copper on both rails")
+	(descr "Reverse mount QRE1113GR: hand solder inverted leads on underside rails; lenses face through slot")
 	(tags "refective opto couple photo coupler")
 	(property "Reference" "REF**"
 		(at -2.5 0 90)
 		(layer "F.SilkS")
-		(uuid "cd4dc7a4-b8eb-44ad-8fbc-327f41c6d199")
+		(uuid "00dd19a5-a59c-4928-b39c-ed769212d6ab")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "QRE1113GR_OpticalSlot"
 		(at 0 3.9 0)
 		(layer "F.Fab")
-		(uuid "a4eb335e-2520-4a34-8343-1d8f8d42e14f")
+		(uuid "78436447-ac57-45fe-8584-b3e4a3ad689a")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3e1baafb-14b3-438c-991f-d954e483a032")
+		(uuid "f7911c5b-cf4e-44a0-9c09-81966ce38831")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c6ea2cfa-baa4-4822-94f4-6dd5ed951533")
+		(uuid "0e9398e7-844a-4459-8b6e-b573d7234516")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56,24 +56,14 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -0.45 -3.63)
-		(end 0.45 -3.63)
+		(start 0.58 -3.5)
+		(end 1.22 -3.5)
 		(stroke
 			(width 0.12)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "1f2f3c51-6948-4e49-acf6-a941ca4b380f")
-	)
-	(fp_line
-		(start -0.45 3.63)
-		(end 0.45 3.63)
-		(stroke
-			(width 0.12)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "07b4ab78-9e23-4343-bf65-f78c0c4c9b0e")
+		(uuid "70ce3af9-0fc5-485d-a21f-31a0caa676dc")
 	)
 	(fp_rect
 		(start -1.58 -3.7)
@@ -84,62 +74,82 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "dc27b4b6-ed2f-40d3-9504-b66d69d1c0d1")
+		(uuid "736892f5-2bdf-4256-b63e-7b690e717fce")
 	)
 	(fp_line
-		(start -1.6 -0.8)
-		(end -1.1 -1.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "afddbbbc-d2b1-4a6f-a1cb-b1a6229219f8")
-	)
-	(fp_line
-		(start -1.6 1.3)
-		(end -1.6 -0.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "e79ab658-fd68-4d70-bbc1-c6eceff39abd")
-	)
-	(fp_line
-		(start -1.1 -1.3)
-		(end 1.6 -1.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "42976373-212a-47c1-bd5d-87c83ab01d45")
-	)
-	(fp_line
-		(start 1.6 -1.3)
-		(end 1.6 1.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "09b8ba6c-d98d-4e79-addc-9249cebec609")
-	)
-	(fp_line
-		(start 1.6 1.3)
+		(start -1.6 -1.3)
 		(end -1.6 1.3)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "d7a3fc8b-6d8d-4632-8308-f6eddfa73d14")
+		(uuid "388d183b-a40b-4bd2-b4bc-f23fd81a78a0")
+	)
+	(fp_line
+		(start -1.6 1.3)
+		(end 1.6 1.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "07f2ac98-e254-4dbe-8355-6977d29c1942")
+	)
+	(fp_line
+		(start -0.45 -3.63)
+		(end 0.45 -3.63)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "2fd66e09-7263-4870-988b-a97c2c5f7d98")
+	)
+	(fp_line
+		(start -0.45 3.63)
+		(end 0.45 3.63)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "6aed8834-a19c-472f-acd0-37f8e81a0dab")
+	)
+	(fp_line
+		(start 1.1 -1.3)
+		(end -1.6 -1.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d489091e-10fa-4763-b6b9-6876eefd40f9")
+	)
+	(fp_line
+		(start 1.6 -0.8)
+		(end 1.1 -1.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "842bb7a5-afe0-4e7a-a83d-f930abd88412")
+	)
+	(fp_line
+		(start 1.6 1.3)
+		(end 1.6 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0ae25e4d-2ce1-4ffb-9c36-eda8bee18408")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0.2 0)
 		(layer "F.Fab")
-		(uuid "e8f9c598-8d9e-41fe-a053-fbca2f3dfbc9")
+		(uuid "1fda7ca3-c642-4892-9635-9a7020e5c7ce")
 		(effects
 			(font
 				(size 0.75 0.75)
@@ -148,43 +158,43 @@
 		)
 	)
 	(pad "1" smd roundrect
-		(at -0.9 -2.73)
-		(size 0.79 1.44)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(at 0.9 -2.615)
+		(size 0.79 1.25)
+		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.25)
-		(uuid "0cca8bdf-69ac-4dc7-93a2-369a629ca82c")
+		(uuid "9f5b33ab-34f1-42d4-b64f-c98fcbfe4541")
 	)
 	(pad "2" smd roundrect
-		(at -0.9 2.73)
-		(size 0.79 1.44)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(at 0.9 2.615)
+		(size 0.79 1.25)
+		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.25)
-		(uuid "6d85fb3e-7904-4ac9-a04f-e0601890fcc4")
+		(uuid "f5a9673b-e156-4da6-b29e-3dbf12039532")
 	)
 	(pad "3" smd roundrect
-		(at 0.9 2.73)
-		(size 0.79 1.44)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(at -0.9 2.615)
+		(size 0.79 1.25)
+		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.25)
-		(uuid "f156743b-fc4c-4f25-b760-72d81f335c54")
+		(uuid "5f91c39f-9344-47bf-ba00-b27c3dedd360")
 	)
 	(pad "4" smd roundrect
-		(at 0.9 -2.73)
-		(size 0.79 1.44)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(at -0.9 -2.615)
+		(size 0.79 1.25)
+		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.25)
-		(uuid "46043ebd-4800-4f32-8acc-2d1ba0357e8b")
+		(uuid "e15caf7a-5eda-4119-a358-ed242be695b5")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/OptoDevice.3dshapes/OnSemi_CASE100CY.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 0 0.25)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz 0 180 0)
 		)
 	)
 )

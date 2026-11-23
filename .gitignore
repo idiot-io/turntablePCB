@@ -50,3 +50,7 @@ eagle.epf
 
 # file locks introduced since 7.x
 *.lck
+
+# KiCad local editor state
+*.kicad_prl
+

@@ -13,8 +13,11 @@ KiCad board remain separate.
   underside, with both connectors still facing the same board edge.
   U1 uses the v2 STEP model from [Waveshare's resources][waveshare] for 3D
   visualization; the solder-down footprint is unchanged.
-- The board uses USB for power and native USB MIDI. TRS MIDI uses GPIO10
-  through a 5 V buffer. All ten optical inputs use direct RC readout.
+- The board uses USB for power and native USB MIDI. TRS MIDI out sinks the
+  receiver's current loop through Q1, a 2N7002 N-FET on the 5 V side; GPIO10
+  drives its gate and R19 holds that gate low during reset. The switch inverts,
+  so the UART TX polarity must be inverted. All ten optical inputs use direct
+  RC readout.
 - GPIO11 (`QUAD_A`, U11) and GPIO12 (`QUAD_B`, U12) read the two outer rings on
   the [100 mm wheel](../../wheel_quadrature_100mm.svg). Each ring has 128
   cycles; the quarter-cycle pattern offset gives 512 nominal counts per turn.

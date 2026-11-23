@@ -9,195 +9,321 @@
 		(comment 1 "Waveshare ESP32-S3-Zero | No mux or comparator")
 	)
 	(lib_symbols
-		(symbol "74xGxx:74AHCT1G125"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -2.54 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
+(symbol "Transistor_FET:2N7002"
+	(pin_names
+		(offset 0)
+		(hide yes)
+	)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(in_pos_files yes)
+	(duplicate_pin_numbers_are_jumpers no)
+	(property "Reference" "Q"
+		(at 5.08 1.905 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
-			(property "Value" "74AHCT1G125"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Single Buffer Gate Tri-State, Low-Voltage CMOS"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Single Gate Buff Tri-State LVC CMOS"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT* SG-*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "74AHCT1G125_0_1"
-				(polyline
-					(pts
-						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "74AHCT1G125_1_1"
-				(pin input inverted
-					(at 0 10.16 270)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 0 0)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -5.08 -10.16 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 12.7 0 180)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -5.08 10.16 270)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
+			(justify left)
 		)
+	)
+	(property "Value" "2N7002"
+		(at 5.08 0 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+	)
+	(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(at 5.08 -1.905 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left)
+		)
+	)
+	(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(at 5.08 -3.81 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+	)
+	(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+		(at 0 0 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "ki_keywords" "N-Channel Switching MOSFET"
+		(at 0 0 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "ki_fp_filters" "SOT?23*"
+		(at 0 0 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(symbol "2N7002_0_1"
+		(polyline
+			(pts
+				(xy 0.254 1.905) (xy 0.254 -1.905)
+			)
+			(stroke
+				(width 0.254)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 0.254 0) (xy -2.54 0)
+			)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 0.762 2.286) (xy 0.762 1.27)
+			)
+			(stroke
+				(width 0.254)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 0.762 0.508) (xy 0.762 -0.508)
+			)
+			(stroke
+				(width 0.254)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 0.762 -1.27) (xy 0.762 -2.286)
+			)
+			(stroke
+				(width 0.254)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+			)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+			)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type outline)
+			)
+		)
+		(circle
+			(center 1.651 0)
+			(radius 2.794)
+			(stroke
+				(width 0.254)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 2.54 2.54) (xy 2.54 1.778)
+			)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(circle
+			(center 2.54 1.778)
+			(radius 0.254)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type outline)
+			)
+		)
+		(circle
+			(center 2.54 -1.778)
+			(radius 0.254)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type outline)
+			)
+		)
+		(polyline
+			(pts
+				(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+			)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 2.921 0.381) (xy 3.683 0.381)
+			)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+		(polyline
+			(pts
+				(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+			)
+			(stroke
+				(width 0)
+				(type default)
+			)
+			(fill
+				(type none)
+			)
+		)
+	)
+	(symbol "2N7002_1_1"
+		(pin input line
+			(at -5.08 0 0)
+			(length 2.54)
+			(name "G"
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(number "1"
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(pin passive line
+			(at 2.54 -5.08 90)
+			(length 2.54)
+			(name "S"
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(number "2"
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(pin passive line
+			(at 2.54 5.08 270)
+			(length 2.54)
+			(name "D"
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(number "3"
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
 		(symbol "Connector_Audio:AudioJack3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1996,7 +2122,7 @@
 		)
 		(uuid "459571e0-e23d-592a-ac50-10c688845f8b")
 	)
-	(text "GPIO10: UART TX, 31,250 baud, 8N1, idle high. R17/R18: ≥0.25 W."
+	(text "GPIO10: UART TX, 31,250 baud, 8N1, idle low (Q1 inverts TX). R17/R18: ≥0.25 W."
 		(exclude_from_sim no)
 		(at 120.65 160.02 0)
 		(effects
@@ -2438,16 +2564,6 @@
 			(type default)
 		)
 		(uuid "1e8254cd-db70-5d7c-909a-2a6f6273d97e")
-	)
-	(wire
-		(pts
-			(xy 168.91 133.35) (xy 168.91 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20b79f8b-b63b-5312-8830-8f3571a26ff3")
 	)
 	(wire
 		(pts
@@ -3251,16 +3367,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 133.35) (xy 173.99 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5831e03-7454-596e-94ad-3344028ed216")
-	)
-	(wire
-		(pts
 			(xy 71.12 158.75) (xy 58.42 158.75)
 		)
 		(stroke
@@ -3299,6 +3405,56 @@
 		)
 		(uuid "cdf8d693-fb65-5619-866b-dec84ad155ca")
 	)
+(wire
+	(pts
+		(xy 166.37 138.43) (xy 166.37 135.89)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "a1b2c3d4-0001-4000-8000-000000000001")
+)
+(wire
+	(pts
+		(xy 166.37 135.89) (xy 186.69 135.89)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "a1b2c3d4-0001-4000-8000-000000000002")
+)
+(wire
+	(pts
+		(xy 186.69 135.89) (xy 186.69 143.51)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "a1b2c3d4-0001-4000-8000-000000000003")
+)
+(wire
+	(pts
+		(xy 166.37 148.59) (xy 166.37 153.67)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "a1b2c3d4-0001-4000-8000-000000000004")
+)
+(wire
+	(pts
+		(xy 166.37 153.67) (xy 168.91 153.67)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "a1b2c3d4-0001-4000-8000-000000000005")
+)
 	(wire
 		(pts
 			(xy 186.69 72.39) (xy 189.23 72.39)
@@ -3659,7 +3815,7 @@
 		)
 		(uuid "3751a0a8-4b61-5806-9880-5ace8fa1fe2c")
 	)
-	(label "+3V3"
+	(label "GND"
 		(at 147.32 127 0)
 		(effects
 			(font
@@ -3818,16 +3974,6 @@
 			(justify right bottom)
 		)
 		(uuid "74cbaa2b-2c57-5889-8a0a-e2fe342523af")
-	)
-	(label "GND"
-		(at 173.99 129.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "801866d5-1ca2-5a7b-aa3d-7b4b14045a4c")
 	)
 	(label "GND"
 		(at 228.6 41.91 180)
@@ -4018,16 +4164,6 @@
 			(justify right bottom)
 		)
 		(uuid "b17906d1-693c-5e7c-a7e6-a3efa8aec5c8")
-	)
-	(label "USB_VBUS"
-		(at 168.91 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ba9e7073-e557-57e5-a447-880a867c818d")
 	)
 	(label "+3V3"
 		(at 252.73 49.53 0)
@@ -4846,94 +4982,93 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "74xGxx:74AHCT1G125")
-		(at 173.99 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3599d919-3ec8-5c6b-88eb-7308cacd8c1c")
-		(property "Reference" "U10"
-			(at 180.34 132.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+(symbol
+	(lib_id "Transistor_FET:2N7002")
+	(at 163.83 143.51 0)
+	(unit 1)
+	(body_style 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(in_pos_files yes)
+	(dnp no)
+	(uuid "3599d919-3ec8-5c6b-88eb-7308cacd8c1c")
+	(property "Reference" "Q1"
+		(at 166.37 132.08 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Value" "74AHCT1G125"
-			(at 185.42 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	)
+	(property "Value" "2N7002"
+		(at 166.37 134.62 0)
+		(show_name no)
+		(do_not_autoplace no)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 173.99 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	)
+	(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(at 168.91 145.42 0)
+		(hide yes)
+		(show_name no)
+		(do_not_autoplace no)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
 			)
+			(justify left)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 173.99 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	)
+	(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(at 168.91 147.32 0)
+		(hide yes)
+		(show_name no)
+		(do_not_autoplace no)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Description" "Single Buffer Gate Tri-State, Low-Voltage CMOS"
-			(at 173.99 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f5adbab2-d350-55ee-b325-5ee456f2942c")
-		)
-		(pin "2"
-			(uuid "489f57a5-d542-5389-9a2d-442535081013")
-		)
-		(pin "3"
-			(uuid "902edfee-cbc4-5e21-8193-d82b6e89f24c")
-		)
-		(pin "4"
-			(uuid "a5631349-3fc0-5f7c-9db7-133729467a27")
-		)
-		(pin "5"
-			(uuid "517fd8fc-e1e7-541f-bbb4-16aa2f723e73")
-		)
-		(instances
-			(project ""
-				(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
-					(reference "U10")
-					(unit 1)
-				)
+	)
+	(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+		(at 163.83 143.51 0)
+		(hide yes)
+		(show_name no)
+		(do_not_autoplace no)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
 		)
 	)
+	(pin "1"
+		(uuid "9a4b7c1e-2d3f-4b58-8c6a-0e1f2a3b4c51")
+	)
+	(pin "2"
+		(uuid "9a4b7c1e-2d3f-4b58-8c6a-0e1f2a3b4c52")
+	)
+	(pin "3"
+		(uuid "9a4b7c1e-2d3f-4b58-8c6a-0e1f2a3b4c53")
+	)
+	(instances
+		(project ""
+			(path "/e7be61fd-0307-5570-809c-f8064a0663a7"
+				(reference "Q1")
+				(unit 1)
+			)
+		)
+	)
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 193.04 31.75 90)

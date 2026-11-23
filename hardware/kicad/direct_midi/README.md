@@ -11,6 +11,8 @@ KiCad board remain separate.
   packages and still leaves the outer board outline unchanged.
 - The Waveshare ESP32-S3-Zero and the 3.5 mm Type A MIDI OUT jack mount on the
   underside, with both connectors still facing the same board edge.
+  U1 uses the v2 STEP model from [Waveshare's resources][waveshare] for 3D
+  visualization; the solder-down footprint is unchanged.
 - The board uses USB for power and native USB MIDI. TRS MIDI uses GPIO10
   through a 5 V buffer. All ten optical inputs use direct RC readout.
 - GPIO11 (`QUAD_A`, U11) and GPIO12 (`QUAD_B`, U12) read the two outer rings on
@@ -26,8 +28,8 @@ KiCad board remain separate.
   These ten footprints intentionally have no stencil paste apertures.
 - The curved routing is made of native KiCad tracks and circular arcs, not
   imported copper graphics. Ground uses the two GND pours and stitching vias
-  instead of separate traces. The pours have thermal reliefs and respect
-  the S3-Zero antenna keepout on both layers.
+  instead of separate traces. The pours have thermal reliefs. This wired-only
+  revision has no S3-Zero antenna keepout.
 
 KiCad 10 DRC passes with no violations, unconnected items, or schematic parity
 issues. The schematic ERC still flags the grounded emitter in each stock

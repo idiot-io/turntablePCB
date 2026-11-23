@@ -246,4 +246,15 @@
 		(uuid "af1e7e79-7e68-4822-b077-cd38022dc5c3")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/Turntable.3dshapes/ESP32-S3-Zero_v2.step"
+		(offset
+			(xyz -9 -11.75 1.6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

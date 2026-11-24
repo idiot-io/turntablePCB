@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 148" width="720" height="740" role="img" aria-labelledby="title desc">
+  <title id="title">Diagonal staggered optical sensors</title>
+  <desc id="desc">A top-down diagram of a 100 mm wheel on a 100 mm square base. Ten sensors occupy ten different rings, with odd and even rings alternating between two rows at 45 degrees to the board edges.</desc>
+  <rect width="144" height="148" fill="#f5f7f8"/>
+  <g font-family="sans-serif" fill="#172a34">
+    <text x="72" y="10" text-anchor="middle" font-size="5.1" font-weight="bold">Diagonal staggered sensors</text>
+    <text x="72" y="17" text-anchor="middle" font-size="3.1">100 × 100 mm base · Ø100 mm wheel · top view</text>
+    <text x="29" y="24" font-size="3.1" font-weight="bold" fill="#136878">A · odd rings</text>
+    <text x="115" y="24" text-anchor="end" font-size="3.1" font-weight="bold" fill="#825310">B · even rings</text>
+  </g>
+  <rect x="22" y="28" width="100" height="100" rx="1.2" fill="#164b40" stroke="#0c3029" stroke-width=".5"/>
+  <g transform="translate(72 78)">
+    <circle r="50" fill="none" stroke="#e0f1e8" stroke-width=".45" stroke-dasharray="1.8 1.2"/>
+    <g fill="none" stroke="#a0cbbb" stroke-opacity=".55" stroke-width=".20">
+      <circle r="5.2"/>
+      <circle r="9.844444"/>
+      <circle r="14.488889"/>
+      <circle r="19.133333"/>
+      <circle r="23.777778"/>
+      <circle r="28.422222"/>
+      <circle r="33.066667"/>
+      <circle r="37.711111"/>
+      <circle r="42.355556"/>
+      <circle r="47"/>
+    </g>
+    <path d="M-35.36-35.36L0 0 35.36-35.36" fill="none" stroke="#dceee5" stroke-width=".26" stroke-dasharray=".8 .8"/>
+    <circle r="1.25" fill="#f5f7f8"/>
+    <!-- Each opening is 3.1 mm along its row and 3.5 mm across. -->
+    <g transform="rotate(-135)" fill="#081e19" stroke="#74e4f1" stroke-width=".42">
+      <rect x="3.65" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+      <rect x="12.938889" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+      <rect x="22.227778" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+      <rect x="31.516667" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+      <rect x="40.805556" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+    </g>
+    <g transform="rotate(-45)" fill="#081e19" stroke="#ffce78" stroke-width=".42">
+      <rect x="8.294444" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+      <rect x="17.583333" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+      <rect x="26.872222" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+      <rect x="36.161111" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+      <rect x="45.45" y="-1.75" width="3.1" height="3.5" rx=".5"/>
+    </g>
+    <g font-family="sans-serif" font-weight="bold" font-size="2.8" dominant-baseline="central">
+      <g fill="#a6f3fc" text-anchor="end" transform="translate(-2.7 2.7)">
+        <text x="-3.68" y="-3.68">1</text>
+        <text x="-10.25" y="-10.25">3</text>
+        <text x="-16.81" y="-16.81">5</text>
+        <text x="-23.38" y="-23.38">7</text>
+        <text x="-29.95" y="-29.95">9</text>
+      </g>
+      <g fill="#ffdfa5" transform="translate(2.7 2.7)">
+        <text x="6.96" y="-6.96">2</text>
+        <text x="13.53" y="-13.53">4</text>
+        <text x="20.10" y="-20.10">6</text>
+        <text x="26.67" y="-26.67">8</text>
+        <text x="33.23" y="-33.23">10</text>
+      </g>
+    </g>
+  </g>
+  <g font-family="sans-serif" fill="#172a34" text-anchor="middle">
+    <text x="72" y="137" font-size="3.3">45° to board edges · 9.29 mm pitch within each row</text>
+    <text x="72" y="143" font-size="2.9">Ring centerlines only · not fabrication artwork</text>
+  </g>
+</svg>
